@@ -7,8 +7,8 @@ const Navbar = () => {
         <li><NavLink to='/about-me'>About Me</NavLink></li>
     </>
     return (
-        <div className="navbar bg-base-300">
-            <div className="navbar-start">
+        <div className="navbar  mx-auto bg-[#1A0B2E] text-white  fixed top-0 z-50">
+            <div className="navbar-start ">
                 <div className="dropdown">
                     <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
                         <svg
@@ -38,7 +38,7 @@ const Navbar = () => {
                 </ul>
             </div>
             <div className="navbar-end">
-                <a className="btn">Download Resume</a>
+                <button className="p-3 rounded-lg bg-[#693B93]  border-0 border-[#542992]   border-b-4   ">Download Resume</button>
             </div>
         </div>
     );
