@@ -1,5 +1,6 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
+import resume from '../assets/safayet_hossan.pdf'
 
 const Navbar = () => {
     const links = <>
@@ -38,7 +39,7 @@ const Navbar = () => {
                 </ul>
             </div>
             <div className="navbar-end">
-                <button className="p-3 rounded-lg bg-[#693B93]  border-0 border-[#542992]   border-b-4   ">Download Resume</button>
+                <a href={resume} download={resume} className="p-3 rounded-lg bg-[#693B93]  border-0 border-[#542992]   border-b-4   ">Download Resume</a>
             </div>
         </div>
     );

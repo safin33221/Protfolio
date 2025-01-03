@@ -1,5 +1,5 @@
 import profile from '../assets/safin.png'
-import profileGradient from '../assets/Gradient.png'
+import resume from '../assets/safayet_hossan.pdf'
 
 const HeroBanner = () => {
     return (
@@ -17,7 +17,7 @@ const HeroBanner = () => {
                     <p className="py-6">
                         I Make beautiful landing page
                     </p>
-                    <button className="p-3 rounded-lg bg-[#693B93]  border-0 border-[#542992]   border-b-4 ">My Resume</button>
+                    <a href={resume} download={resume} className="p-3 rounded-lg bg-[#693B93]  border-0 border-[#542992]   border-b-4   ">My Resume</a>
                 </div>
             </div>
         </div>
