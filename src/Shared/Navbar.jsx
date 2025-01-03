@@ -4,6 +4,7 @@ import resume from '../assets/safayet_hossan.pdf'
 
 const Navbar = () => {
     const links = <>
+        <li><NavLink to='/'>Home</NavLink></li>
         <li><NavLink to='/skill'>Skills</NavLink></li>
         <li><NavLink to='/about-me'>About Me</NavLink></li>
     </>
@@ -39,7 +40,7 @@ const Navbar = () => {
                 </ul>
             </div>
             <div className="navbar-end">
-                <a href={resume} download={resume} className="p-3 rounded-lg bg-[#693B93]  border-0 border-[#542992]   border-b-4   ">Download Resume</a>
+                <a href={resume} download={resume} className="btn btn-outline rounded-lg bg-[#693B93]  border-0 border-[#542992]   border-b-4   ">Download Resume</a>
             </div>
         </div>
     );
