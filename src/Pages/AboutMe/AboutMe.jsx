@@ -13,10 +13,10 @@ const AboutMe = () => {
     return (
         <div className="bg-[#251C31] text-white pb-5  min-h-screen overflow-x-hidden pt-16 md:pt-10">
             <div className='md:flex items-center '>
-                <div className=' w-1/2 mx-auto'>
+                <div className=' md:w-1/2 mx-auto'>
                 <Lottie animationData={aboutMe} className='w-4/5 mx-auto' />
                 </div>
-                <div  className=" w-1/2  mx-auto  p-10 md:p-20 backdrop-blur-xl bg-transparent text-left ">
+                <div  className=" md:w-1/2  mx-auto  p-10 md:p-20 backdrop-blur-xl bg-transparent text-left ">
                     <h1 className=" text-4xl py-5 ">About Me_</h1>
                     <p>"Hi, I'm Safayet Hossan, a dedicated Frontend Developer with a passion for crafting intuitive and visually engaging user experiences. With expertise in React, JavaScript, HTML, and CSS, I specialize in building responsive and dynamic interfaces that bring ideas to life. I strive to create designs that are not only functional but also a delight to use, ensuring every interaction is seamless and impactful."</p>
                 </div>

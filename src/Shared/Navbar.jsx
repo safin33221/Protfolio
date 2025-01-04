@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link, NavLink } from 'react-router-dom';
 import resume from '../assets/safayet_hossan.pdf'
+import logo from '../assets/logo.png'
 
 const Navbar = () => {
     const links = <>
@@ -34,7 +35,7 @@ const Navbar = () => {
                         {links}
                     </ul>
                 </div>
-                <Link to='/' className="btn btn-ghost text-3xl from-neutral-content font-bold text-[#834bb8]">SaFin</Link>
+                <Link to='/' className="btn btn-ghost text-3xl from-neutral-content font-bold text-[#ffffff]"> <img src={logo}  className='w-12 rounded-full' alt="" />Sa<span className='text-[#ffde59]'>Fin</span></Link>
             </div>
             <div className="navbar-center hidden lg:flex">
                 <ul className="menu menu-horizontal px-1">
@@ -42,7 +43,7 @@ const Navbar = () => {
                 </ul>
             </div>
             <div className="navbar-end">
-                <a href={resume} download={resume} className="btn btn-outline rounded-lg bg-[#693B93]  border-0 border-[#542992]   border-b-4  text-white ">My Resume</a>
+                <a href={resume} download={resume} className="p-2 rounded-lg bg-[#693B93]  border-0 border-[#542992]   border-b-4 hover:bg-[#552f79] transition-all duration-200   ">My Resume</a>
             </div>
         </div>
     );

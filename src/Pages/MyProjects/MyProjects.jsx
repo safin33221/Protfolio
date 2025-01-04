@@ -10,7 +10,7 @@ const MyProjects = () => {
     }, [])
     return (
         <div className="bg-[#251C31] min-h-screen py-24">
-            <div className='w-10/12 mx-auto grid grid-cols-3  gap-10'>
+            <div className='w-10/12 mx-auto grid grid-cols-1 lg:grid-cols-3  gap-10'>
 
                 {
                     projects.map(project => <div className="relative mx-auto group w-full h-96 bg-cover bg-gray-200 overflow-hidden rounded-lg shadow-lg">

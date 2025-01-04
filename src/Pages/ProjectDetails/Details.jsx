@@ -27,10 +27,10 @@ const Details = () => {
                     <h1 className='font-bold text-3xl  py-4'>{heading}</h1>
                     <p className='text-lg text-gray-400'>{paragraph}</p>
 
-                    <div className='my-10'>
-                        <p className='my-5 text-gray-400 border-b w-fit'>Uses Technologis</p>
+                        <p className='my-5 text-gray-400 border-b w-fit'> Technology uses</p>
+                    <div className='my-10 flex gap-5  flex-wrap'>
                         {tools?.map((tool, idx) => (
-                            <span key={idx} className="p-3 bg-[#7240a1] mx-4 rounded-lg ">{tool?.name}</span>
+                            <span key={idx} className="p-3 bg-[#7240a1] mx-2  rounded-lg w-32 text-center hover:scale-110 transition-all duration-200 ease-linear hover:bg-[#5b3182] ">{tool?.name}</span>
                         ))}
 
                     </div>
@@ -41,7 +41,7 @@ const Details = () => {
                             className="btn btn-outline border-[#693B93] text-gray-400  my-4">Source Code</a>
 
                     </div>
-                    <div>
+                    <div className='pb-5'>
                         <h1 className='font-bold text-lg'>Planned Improvements_</h1>
                         <p className='text-gray-400'>{improvements}</p>
                     </div>
