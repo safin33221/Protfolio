@@ -9,8 +9,9 @@ const MyProjects = () => {
             .then(data => setProjects(data))
     }, [])
     return (
-        <div className="bg-[#251C31] min-h-screen py-24">
-            <div className='w-10/12 mx-auto grid grid-cols-1 lg:grid-cols-3  gap-10'>
+        <div className="bg-[#251C31] text-white min-h-screen py-24">
+            <h1 className='text-3xl py-4 font-bold mx-5'>My Leates Projects_</h1>
+            <div className='w-11/12 mx-auto grid grid-cols-1 lg:grid-cols-3  gap-10'>
 
                 {
                     projects.map(project => <div className="relative mx-auto group w-full h-96 bg-cover bg-gray-200 overflow-hidden rounded-lg shadow-lg">
@@ -18,7 +19,7 @@ const MyProjects = () => {
                         <img
                             src={project.image}
                             alt="Card Background"
-                            className="w-full h-full object-cover bg-[#693B93] bg-cover"
+                            className="w-full h-full object-cover  bg-cover"
                         />
 
                         {/* Overlay */}
