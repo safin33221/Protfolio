@@ -18,7 +18,7 @@ const Skill = () => {
                 speed={5000} // Controls the scrolling speed
                 loop={true} // Ensures the slides loop infinitely
                 autoplay={{
-                    delay: 20, // No delay between slides
+                    delay: 0, // No delay between slides
                     disableOnInteraction: true, // Keeps autoplay active on interaction
                     pauseOnMouseEnter: true, // Ensures it doesn't pause on hover
                 }}

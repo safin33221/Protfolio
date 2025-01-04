@@ -19,7 +19,7 @@ const MyProjects = () => {
                     <div
                         className="absolute inset-0 bg-black bg-opacity-60 
                    translate-y-full group-hover:translate-y-0 
-                   transition-transform duration-1000 flex items-center justify-center"
+                   transition-transform duration-1000 ease-linear flex items-center justify-center"
                     >
                         <div className="text-center text-white flex flex-col ">
                             <div className='w-1/2 mx-auto'>
@@ -49,7 +49,7 @@ const MyProjects = () => {
                     <div
                         className="absolute inset-0 bg-black bg-opacity-90 
                    translate-y-full group-hover:translate-y-0 
-                   transition-transform duration-1000 flex items-center justify-center"
+                   transition-transform duration-1000 ease-linear flex items-center justify-center"
                     >
                         <div className="text-center text-white flex flex-col ">
                             <div>
@@ -80,7 +80,7 @@ const MyProjects = () => {
                     <div
                         className="absolute inset-0 bg-black bg-opacity-90 
                    translate-y-full group-hover:translate-y-0 
-                   transition-transform duration-1000 flex items-center justify-center"
+                   transition-transform duration-1000 ease-linear flex items-center justify-center"
                     >
                         <div className="text-center text-white flex flex-col ">
                             <div className='md:w-9/12 mx-auto'>

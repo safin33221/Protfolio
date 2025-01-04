@@ -6,8 +6,9 @@ const Navbar = () => {
     const links = <>
         <li><NavLink to='/'>Home</NavLink></li>
         <li><NavLink to='/about-me'>About Me</NavLink></li>
-        <li><NavLink to='/skills'>Skills</NavLink></li>
+        <li><NavLink to='/skills'>My Skills</NavLink></li>
         <li><NavLink to='/projects'>My Projects</NavLink></li>
+        <li><NavLink to='/contact-me'>Contact Me</NavLink></li>
     </>
     return (
         <div className="navbar w-full  mx-auto bg-[#1A0B2E] text-white  fixed top-0 z-50">
@@ -33,7 +34,7 @@ const Navbar = () => {
                         {links}
                     </ul>
                 </div>
-                <a className="btn btn-ghost text-xl">Safin</a>
+                <a className="btn btn-ghost text-3xl from-neutral-content text-[#a470d4]">Safin</a>
             </div>
             <div className="navbar-center hidden lg:flex">
                 <ul className="menu menu-horizontal px-1">
