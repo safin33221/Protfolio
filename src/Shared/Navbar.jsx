@@ -7,7 +7,7 @@ const Navbar = () => {
         <li><NavLink to='/'>Home</NavLink></li>
         <li><NavLink to='/about-me'>About Me</NavLink></li>
         <li><NavLink to='/skills'>Skills</NavLink></li>
-        <li><NavLink to='/projects'>My leatest Project</NavLink></li>
+        <li><NavLink to='/projects'>My Projects</NavLink></li>
     </>
     return (
         <div className="navbar w-full  mx-auto bg-[#1A0B2E] text-white  fixed top-0 z-50">
