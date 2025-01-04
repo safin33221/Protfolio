@@ -1,5 +1,5 @@
 import React from 'react';
-import { NavLink } from 'react-router-dom';
+import { Link, NavLink } from 'react-router-dom';
 import resume from '../assets/safayet_hossan.pdf'
 
 const Navbar = () => {
@@ -30,11 +30,11 @@ const Navbar = () => {
                     </div>
                     <ul
                         tabIndex={0}
-                        className="menu menu-sm dropdown-content  rounded-box z-[1] mt-3  bg-[#693B93]  w-52 p-2 shadow">
+                        className="menu menu-sm dropdown-content  rounded-box z-[1] mt-3  bg-[#693B93]  w-52 p-2 mx-6 shadow">
                         {links}
                     </ul>
                 </div>
-                <a className="btn btn-ghost text-3xl from-neutral-content text-[#a470d4]">Safin</a>
+                <Link to='/' className="btn btn-ghost text-3xl from-neutral-content font-bold text-[#834bb8]">SaFin</Link>
             </div>
             <div className="navbar-center hidden lg:flex">
                 <ul className="menu menu-horizontal px-1">
@@ -42,7 +42,7 @@ const Navbar = () => {
                 </ul>
             </div>
             <div className="navbar-end">
-                <a href={resume} download={resume} className="btn btn-outline rounded-lg bg-[#693B93]  border-0 border-[#542992]   border-b-4   ">My Resume</a>
+                <a href={resume} download={resume} className="btn btn-outline rounded-lg bg-[#693B93]  border-0 border-[#542992]   border-b-4  text-white ">My Resume</a>
             </div>
         </div>
     );

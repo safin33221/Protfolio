@@ -3,6 +3,7 @@ import { FaGithub, FaLinkedin, FaLinkedinIn, FaMailBulk, FaVoicemail, FaWhatsapp
 import { FaLocationDot } from 'react-icons/fa6';
 import { MdEmail } from 'react-icons/md';
 import emailjs from '@emailjs/browser';
+import Swal from 'sweetalert2';
 
 const ContactMe = () => {
     const form = useRef()
@@ -12,7 +13,12 @@ const ContactMe = () => {
             publicKey: 'tTniGIpPDVocEd5Ei'
         })
             .then(() => {
-                console.log('success');
+                e.target.reset()
+                Swal.fire({
+                    title: "Your message send successfull",
+                    icon: "success",
+                    draggable: true
+                });
             },
                 (error) => {
                     console.log(error);
@@ -22,23 +28,49 @@ const ContactMe = () => {
     }
     return (
         <div className='bg-[#251C31] text-white overflow-x-hidden min-h-screen'>
-            <h1 className='text-3xl font-bold text-center py-5'>Contact Me</h1>
-            <div className='md:flex  gap-5 w-10/12 mx-auto'>
+
+            <div className='md:flex  gap-5 w-10/12 mx-auto pt-20'>
+                <div className='md:w-1/2 flex flex-col  justify-center text-left'>
+                    <h1 className='text-3xl font-bold'>Let's Chat.</h1>
+                    <h2 className='text-4xl font-bold py-2'>Tell Me About Your Project.</h2>
+                    <p>Let's create something together🤘</p>
+                    <hr className='my-5' />
+                    <div className=' flex flex-col '>
+                        <h1 className='text-xl border-b-2 w-fit border-gray-400 text-gray-300'>Reach Out to Me</h1>
+                        
+                        
+                        <div className='flex flex-col  justify-center mt-2'>
+                            <h1 className='flex text-xl items-center text-gray-400 '><MdEmail className=' mx-2  ' />: safin33221@gmail.com</h1>
+                            <h1 className='flex text-xl items-center text-gray-400 '><FaWhatsapp className=' mx-2 ' />: 8801837429636</h1>
+                            <h1 className='flex text-xl items-center text-gray-400 '><FaLinkedinIn className=' mx-2 ' />: Safayet Hossan Safin</h1>
+                            <h1 className='flex text-xl items-center text-gray-400 '><FaGithub className=' mx-2 ' />: safin33221</h1>
+
+                            <h1 className='flex text-xl items-center text-gray-400 '><FaLocationDot className=' mx-2 ' />: Chittagong, Bangladesh.</h1>
+
+                        </div>
+
+
+                    </div>
+                </div>
                 <form ref={form} onSubmit={handleSendEmail} className=' md:w-1/2'>
 
                     <div className='p-5'>
+                        <h1 className='text-2xl font-bold py-4'>Send me Email</h1>
                         <input
+                            required
                             type="text"
                             placeholder="Your Name"
                             name='from_name'
                             className="input input-bordered mb-5 border-[#693B93] focus:border-[#693B93] w-full bg-transparent focus:outline-none" />
                         <input
+                            required
                             type="email"
                             placeholder="Your Email"
-                            name='user_email'
+                            name='from_email'
                             className="input input-bordered border-[#693B93] focus:border-[#693B93] w-full bg-transparent focus:outline-none" />
 
                         <textarea
+                            required
                             placeholder="Message"
                             name='message'
                             className="textarea textarea-bordered textarea-md w-full focus:outline-none  mt-5 bg-transparent border-[#693B93] focus:border-[#693B93] "></textarea>
@@ -46,19 +78,7 @@ const ContactMe = () => {
                     </div>
                 </form>
 
-                <div className=' md:w-1/2'>
-                    <div className='flex flex-col  justify-center mt-2'>
-                        <h1 className='flex text-xl items-center text-gray-400 '><MdEmail className=' mx-2 ' />: safin33221@gmail.com</h1>
-                        <h1 className='flex text-xl items-center text-gray-400 '><FaWhatsapp className=' mx-2 ' />: 8801837429636</h1>
-                        <h1 className='flex text-xl items-center text-gray-400 '><FaLinkedinIn className=' mx-2 ' />: Safayet Hossan Safin</h1>
-                        <h1 className='flex text-xl items-center text-gray-400 '><FaGithub className=' mx-2 ' />: safin33221</h1>
 
-                        <h1 className='flex text-xl items-center text-gray-400 '><FaLocationDot className=' mx-2 ' />: Chittagong, Bangladesh.</h1>
-
-                    </div>
-
-
-                </div>
 
             </div>
         </div>

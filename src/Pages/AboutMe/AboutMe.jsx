@@ -7,7 +7,7 @@ const AboutMe = () => {
         AOS.init({ duration: 1500 }); // Adjust duration if needed
     }, []);
     return (
-        <div  className="bg-[#251C31] text-white pt-10 py-10 overflow-x-hidden">
+        <div  className="bg-[#251C31] text-white pb-5  min-h-screen overflow-x-hidden pt-16 md:pt-0">
             <div style={{ borderRadius: '30px 0px 30x 30px' }} className="  md:w-8/12 mx-auto  p-10 md:p-20 backdrop-blur-xl bg-transparent ">
                 <h1 className="text-center  text-4xl ">About Me</h1>
                 <p>"Hi, I'm Safayet Hossan, a dedicated Frontend Developer with a passion for crafting intuitive and visually engaging user experiences. With expertise in React, JavaScript, HTML, and CSS, I specialize in building responsive and dynamic interfaces that bring ideas to life. I strive to create designs that are not only functional but also a delight to use, ensuring every interaction is seamless and impactful."</p>
@@ -29,14 +29,14 @@ const AboutMe = () => {
                     </div>
                 </div>
                 <div data-aos="fade-right"
-                    data-aos-offset="200">
+                    data-aos-offset="150">
                     <div className=" text-justify border-2 border-[#693B93] p-7 rounded-lg">
                         <h2 className=" text-2xl list-item"> Passion for Learning</h2>
                         <p className="text-gray-400">As a 17-year-old, I thrive on learning and experimenting with new technologies. I enjoy creating interactive, user-friendly websites that combine creativity and functionality. Every line of code I write is a step toward building something meaningful, and I''m always looking for opportunities to learn and grow</p>
                     </div>
                 </div>
                 <div data-aos="fade-left"
-                    data-aos-offset="200">
+                    data-aos-offset="150">
                     <div className=" text-justify border-2 border-[#693B93] p-7 rounded-lg">
                         <h2 className=" text-2xl list-item"> Passion for Learning</h2>
                         <p className="text-gray-400">As a 17-year-old, I thrive on learning and experimenting with new technologies. I enjoy creating interactive, user-friendly websites that combine creativity and functionality. Every line of code I write is a step toward building something meaningful, and I''m always looking for opportunities to learn and grow</p>
