@@ -10,7 +10,7 @@ const Navbar = () => {
         <li><NavLink to='/projects'>My leatest Project</NavLink></li>
     </>
     return (
-        <div className="navbar  mx-auto bg-[#1A0B2E] text-white  fixed top-0 z-50">
+        <div className="navbar w-full  mx-auto bg-[#1A0B2E] text-white  fixed top-0 z-50">
             <div className="navbar-start ">
                 <div className="dropdown">
                     <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
@@ -29,7 +29,7 @@ const Navbar = () => {
                     </div>
                     <ul
                         tabIndex={0}
-                        className="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow">
+                        className="menu menu-sm dropdown-content  rounded-box z-[1] mt-3  bg-[#693B93]  w-52 p-2 shadow">
                         {links}
                     </ul>
                 </div>
@@ -41,7 +41,7 @@ const Navbar = () => {
                 </ul>
             </div>
             <div className="navbar-end">
-                <a href={resume} download={resume} className="btn btn-outline rounded-lg bg-[#693B93]  border-0 border-[#542992]   border-b-4   ">Download Resume</a>
+                <a href={resume} download={resume} className="btn btn-outline rounded-lg bg-[#693B93]  border-0 border-[#542992]   border-b-4   ">My Resume</a>
             </div>
         </div>
     );

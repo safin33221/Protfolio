@@ -1,24 +1,25 @@
 import profile from '../assets/safin.png'
 import resume from '../assets/safayet_hossan.pdf'
-import { FaFacebook, FaGithub, FaLinkedin, FaLinkedinIn, FaTwitter, FaWhatsapp } from 'react-icons/fa';
+import { FaFacebook, FaGithub, FaLinkedinIn, FaTwitter, FaWhatsapp } from 'react-icons/fa';
 
 const HeroBanner = () => {
     return (
         <div className="hero bg-[#251C31] text-white min-h-screen mt-4">
             <div className="hero-content  flex-col lg:flex-row-reverse">
-                <div className='md:w-1/2 mx-auto  '>
+                <div className='w-full md:w-1/2 mx-auto  '>
 
                     <img
                         src={profile}
-                        className="max-w-sm rounded-full " />
+                        className="w-11/12 mx-auto md:max-w-sm rounded-full " />
                 </div>
-                <div className='md:w-1/2'>
-                    <h1 className="text-3xl font-bold">Hello</h1>
-                    <h1 className="text-5xl font-bold">I'm a fronend Web Developer</h1>
+                <div className=''>
+                    <h1 className="text-xl font-bold">Hello,I'm a Safin...</h1>
+                    <h1 className="text-3xl font-bold">Frontend Web Developer</h1>
                     <p className="py-6">
                         I Make beautiful landing page
                     </p>
-                    <a href={resume} download={resume} className="p-3 rounded-lg bg-[#693B93]  border-0 border-[#542992]   border-b-4   ">My Resume</a>
+                    <a href={resume} download={resume} className="p-2 rounded-lg bg-[#693B93]  border-0 border-[#542992]   border-b-4    ">Download Resume</a>
+                    <a className="p-2 rounded-lg bg-[#693B93]  border-0 border-[#542992]   border-b-4 mx-2   ">Contact Me</a>
 
                     <div className=' mt-10'>
                         <ul className='flex gap-4'>
