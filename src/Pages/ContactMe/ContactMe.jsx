@@ -15,10 +15,12 @@ const ContactMe = () => {
             .then(() => {
                 e.target.reset()
                 Swal.fire({
-                    title: "Your message send successfull",
+                    position: "top-end",
                     icon: "success",
-                    draggable: true
-                });
+                    title: "Your message has been sent successfully!",
+                    showConfirmButton: false,
+                    timer: 2000
+                  });
             },
                 (error) => {
                     console.log(error);
