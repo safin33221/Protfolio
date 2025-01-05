@@ -31,7 +31,7 @@ const ContactMe = () => {
 
             <div className='md:flex  gap-5 w-10/12 mx-auto pt-20'>
                 <div className='md:w-1/2 flex flex-col  justify-center text-left'>
-                    <h1 className='text-3xl font-bold'>Let's Chat.</h1>
+                    <h1 className='text-3xl font-bold'>Let's Chat....</h1>
                     <h2 className='text-4xl font-bold py-2'>Tell Me About Your Project.</h2>
                     <p>Let's create something together🤘</p>
                     <hr className='my-5' />
@@ -74,7 +74,7 @@ const ContactMe = () => {
                             placeholder="Message"
                             name='message'
                             className="textarea textarea-bordered textarea-md w-full focus:outline-none  mt-5 bg-transparent border-[#693B93] focus:border-[#693B93] "></textarea>
-                        <button className="btn btn-outline border-[#693B93] text-white  my-4">Send Email </button>
+                        <button className="btn btn-outline border-[#693B93] hover:bg-[#552f79] text-white  my-4">Send Email </button>
                     </div>
                 </form>
 

@@ -10,7 +10,7 @@ const MyProjects = () => {
     }, [])
     return (
         <div className="bg-[#251C31] text-white min-h-screen py-24">
-            <h1 className='text-3xl py-4 font-bold mx-5'>My Leates Projects_</h1>
+            <h1 className='text-3xl py-4 font-bold mx-5'>My Leatest Projects_</h1>
             <div className='w-11/12 mx-auto grid grid-cols-1 lg:grid-cols-3  gap-10'>
 
                 {

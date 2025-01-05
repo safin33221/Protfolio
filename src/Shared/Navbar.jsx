@@ -2,14 +2,19 @@ import React from 'react';
 import { Link, NavLink } from 'react-router-dom';
 import resume from '../assets/safayet_hossan.pdf'
 import logo from '../assets/logo.png'
+import { FaHome } from 'react-icons/fa';
+import { CiMemoPad } from 'react-icons/ci';
+import { GiSkills } from 'react-icons/gi';
+import { GrProjects } from 'react-icons/gr';
+import { MdContactMail } from 'react-icons/md';
 
 const Navbar = () => {
     const links = <>
-        <li><NavLink to='/'>Home</NavLink></li>
-        <li><NavLink to='/about-me'>About Me</NavLink></li>
-        <li><NavLink to='/skills'>My Skills</NavLink></li>
-        <li><NavLink to='/projects'>My Projects</NavLink></li>
-        <li><NavLink to='/contact-me'>Contact Me</NavLink></li>
+        <li><NavLink to='/'><FaHome/> Home</NavLink></li>
+        <li><NavLink to='/about-me'><CiMemoPad /> About Me</NavLink></li>
+        <li><NavLink to='/skills'><GiSkills />My Skills</NavLink></li>
+        <li><NavLink to='/projects'><GrProjects />My Projects</NavLink></li>
+        <li><NavLink to='/contact-me'><MdContactMail />Contact Me</NavLink></li>
     </>
     return (
         <div className="navbar w-full  mx-auto bg-[#1A0B2E] text-white  fixed top-0 z-50">

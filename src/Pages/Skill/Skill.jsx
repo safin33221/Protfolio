@@ -1,6 +1,6 @@
 import 'swiper/css';
 import { Swiper, SwiperSlide } from 'swiper/react';
-import { Autoplay, Pagination, Navigation } from 'swiper/modules'
+import { Autoplay } from 'swiper/modules'
 import 'swiper/css/pagination'
 import 'swiper/css/navigation'
 import html from '../../assets/skills/html-5.png'
@@ -36,14 +36,16 @@ const Skill = () => {
                 </div>
             </div>
             <Swiper
-                className="w-11/12 mx-auto py-10"
-                spaceBetween={10}
-                speed={5000} // Controls the scrolling speed
-                loop={Infinity} // Ensures the slides loop infinitely
+                className="w-11/12 mx-auto py-10 my-navigation"
+                spaceBetween={20}
+                speed={2500} // Controls the scrolling speed
+                loop={true} // Ensures the slides loop infinitely
                 autoplay={{
-                    delay: false, // No delay between slides
+                    delay: 0, // No delay between slides
                     disableOnInteraction: false, // Keeps autoplay active on interaction
                     pauseOnMouseEnter: false, // Ensures it doesn't pause on hover
+                    stopOnLastSlide:false,
+                    
                 }}
                 modules={[Autoplay]}
                 breakpoints={{

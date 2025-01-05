@@ -17,7 +17,7 @@ const HeroBanner = () => {
                     <h1 className="text-2xl font-bold">Hello,I'm Safin...</h1>
                     <h1 className="text-5xl font-bold">Frontend Web Developer</h1>
                     <h3 className="py-6 font-bold text-lg">
-                        Your Vision, My Code-
+                        Your Vision, My Code_
                     </h3>
                     <p className='md:w-1/2 mb-5'>
                         Crafting innovative digital experiences that bring your ideas to life, blending creativity and functionality to build solutions that inspire, engage, and deliver results.
